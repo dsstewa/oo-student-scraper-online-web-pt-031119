@@ -29,7 +29,7 @@ class Scraper
         containers.css("div.social-icon-container").each do |social|
           
           
-          social.children.css("a").
+          social.children.css("a").attr("href")
           end
           
          
