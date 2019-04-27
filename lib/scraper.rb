@@ -10,8 +10,6 @@ class Scraper
     students = []
     info = doc.css("div.student-card")
     
-    
-    
     info.each do |value|
       binding.pry
     end
