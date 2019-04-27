@@ -10,14 +10,14 @@ class Scraper
     students = []
     doc.css("div.roster-cards-container").each do |roster|
      
-     roster.css("div.student-name").each do |value|
+     roster.css("div.student-name").each do |names|
      
       #binding.pry
       student = {}
-      student[:name] = value.css("h4.student-name").text
-      student[:location] = value.css("p.student-location").text
+      student[:name] = names.css("h4.student-name").text
+      student[:location] = names.css("p.student-location").text
       binding.pry
-      student[:profile_url] = value.("a").attribute("href")
+      student[:profile_url] = names.("a").attribute("href")
       binding.pry
       
     end
