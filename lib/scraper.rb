@@ -9,12 +9,12 @@ class Scraper
     doc = Nokogiri::HTML(html)
     students = []
     doc.css("div.student-card").each do |value|
-      binding.pry
+      #binding.pry
       student = {}
       student[:name] = value.css("h4.student-name").text
       student[:location] = value.css("p.student-location").text
-      student[:profile_url] = value.css("")
-      
+      #student[:profile_url] = value.css("")
+      binding.pry
       
       
      
