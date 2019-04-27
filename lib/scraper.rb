@@ -9,7 +9,7 @@ class Scraper
     doc = Nokogiri::HTML(html)
     students = []
     
-    binding.pry
+    #binding.pry
     
     
   end
