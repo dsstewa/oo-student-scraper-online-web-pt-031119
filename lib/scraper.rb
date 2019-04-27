@@ -10,9 +10,9 @@ class Scraper
     students = []
     info = doc.css(".roster-cards-container .student-card").text
     
-    info.each do |value|
-      binding.pry
-    end
+    # info.each do |value|
+    #   binding.pry
+    # end
     
     
     binding.pry
