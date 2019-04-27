@@ -31,7 +31,7 @@ class Scraper
           # binding.pry
       
           
-         end
+         
          binding.pry
            #binding.pry
           # sites = {}
