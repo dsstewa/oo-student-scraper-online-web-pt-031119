@@ -10,7 +10,7 @@ class Scraper
     students = []
     doc.css("div.roster-cards-container").each do |roster|
      
-     roster.css("div.student-name").each do |names|
+     roster.css("div.student-card").each do |names|
      
       #binding.pry
       student = {}
