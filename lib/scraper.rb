@@ -8,9 +8,9 @@ class Scraper
     html = open(index_url)
     doc = Nokogiri::HTML(html)
     students = []
-    doc.css("div.student-card").each do |value|
+    doc.css("div.roster-cards-container").each do |roster|
      
-     
+     roster.css("div.student-name").each do |value|
      
       #binding.pry
       student = {}
@@ -20,7 +20,7 @@ class Scraper
       student[:profile_url] = value.("a").attribute("href")
       binding.pry
       
-      
+    end
      
     end
    
