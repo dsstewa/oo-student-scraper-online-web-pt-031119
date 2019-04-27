@@ -14,7 +14,7 @@ class Scraper
     students
   end
 
-doc.css("#instructors .team-holder .person-box")
+#doc.css("#instructors .team-holder .person-box")
 
   def self.scrape_profile_page(profile_url)
     
