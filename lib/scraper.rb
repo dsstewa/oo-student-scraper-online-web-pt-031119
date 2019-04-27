@@ -27,16 +27,19 @@ class Scraper
     #binding.pry
     doc.css("div.vitals-container").each do |containers|
         containers.css("div.social-icon-container").each do |social|
+           social.css("a").each |goods|
            binding.pry
-           sites = {}
-           sites[:twitter]
-           sites[:linkedin] = names.css("h4.student-name").text
-           sites[:github] = names.css("p.student-location").text
-           sites[:blog] = names.attr("href")
-           sites[:profile_quote] = 
-           sites[:bio] = 
+         end
+           #binding.pry
+          # sites = {}
+          # sites[:twitter]
+          # sites[:linkedin] = names.css("h4.student-name").text
+          # sites[:github] = names.css("p.student-location").text
+          # sites[:blog] = names.attr("href")
+          # sites[:profile_quote] = 
+          # sites[:bio] = 
            
-           students << student
+          # students << student
            end
         end
     students
