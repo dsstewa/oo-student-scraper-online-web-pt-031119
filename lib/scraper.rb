@@ -24,16 +24,17 @@ class Scraper
     html = open(profile_url)
     doc = Nokogiri::HTML(html)
     student_info = []
+    links = []
     #binding.pry
     doc.css("div.vitals-container").each do |containers|
         containers.css("div.social-icon-container").each do |social|
-           social.children.css("a").each do |test|
-            test.arrr("href")
-            
-            binding.pry
+           social.children.css("a").each do |site_links|
+            links << site_links.attr("href")
+  
               end
            end
         end
+        binding.pry
       end
 
 
