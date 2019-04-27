@@ -11,10 +11,11 @@ class Scraper
     info = doc.css("div.roster-cards-container")
     #binding.pry
     info.each do |value|
-      value.css(".student_card")
-      
+      value.each do |second_level|
       binding.pry
-    end
+    
+       end
+     end
     
     
    # binding.pry
