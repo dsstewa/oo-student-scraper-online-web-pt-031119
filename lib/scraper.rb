@@ -8,7 +8,7 @@ class Scraper
     html = open(index_url)
     doc = Nokogiri::HTML(html)
     students = []
-    
+    info = doc.css("#instructors .team-holder .person-box")
     binding.pry
     
     students
