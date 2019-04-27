@@ -29,10 +29,12 @@ class Scraper
         containers.css("div.social-icon-container a").each do |social|
            binding.pry
            sites = {}
+           sites[:twitter]
            sites[:linkedin] = names.css("h4.student-name").text
            sites[:github] = names.css("p.student-location").text
            sites[:blog] = names.attr("href")
            sites[:profile_quote] = 
+           sites[:bio] = 
            
            students << student
            end
