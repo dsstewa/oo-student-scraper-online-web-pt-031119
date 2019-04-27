@@ -27,8 +27,10 @@ class Scraper
     #binding.pry
     doc.css("div.vitals-container").each do |containers|
         containers.css("div.social-icon-container").each do |social|
-         
-         
+           social.children.css("a").each  do |next|
+           binding.pry
+              attr("href").value
+         end
          binding.pry
            #binding.pry
           # sites = {}
