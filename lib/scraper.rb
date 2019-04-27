@@ -27,9 +27,7 @@ class Scraper
     #binding.pry
     doc.css("div.vitals-container").each do |containers|
         containers.css("div.social-icon-container").each do |social|
-           social.each |goods|
-           binding.pry
-         end
+         binding.pry
            #binding.pry
           # sites = {}
           # sites[:twitter]
