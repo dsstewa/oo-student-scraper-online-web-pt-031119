@@ -30,6 +30,8 @@ class Scraper
           
           
           social.children.css("a").each do |test|
+            test.arrr("href")
+            
             binding.pry
           end
           
