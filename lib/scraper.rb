@@ -41,6 +41,12 @@ class Scraper
                 end
               end
            end
+          
+          containers.css("div.") 
+           
+           binding.pry
+           
+           
         end
         student_info
         #binding.pry
