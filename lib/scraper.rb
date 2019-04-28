@@ -42,9 +42,9 @@ class Scraper
               end
            end
           student_info[:profile_quote] = containers.css("div.profile-quote").text
-          binding.pry
-          #student_info[:bio] = 
-        end
+          
+          student_info[:bio] = doc.css("div.description-holder p").text
+        enddoc.css("div.description-holder p").text
         student_info
         #binding.pry
       end
