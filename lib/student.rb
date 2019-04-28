@@ -8,6 +8,9 @@ class Student
   def initialize(student_hash)
     @name = student_hash[:name]
     @location = student_hash[:location]
+    if student_hash[:twitter] @twitter = student_hash[:twitter]
+    
+    
     @@all << self
     #binding.pry
   end
