@@ -29,17 +29,18 @@ class Scraper
     doc.css("div.vitals-container").each do |containers|
         containers.css("div.social-icon-container").each do |social|
            social.children.css("a").each do |site_links|
-            binding.pry
-            if site_links.atter("href").include?("twitter")
-              student_info[:twitter] = 
-            
-            
-
-               end
+            #binding.pry
+            if site_links.attr("href").include?("twitter")
+              student_info[:twitter] = site_links.attr("href")
+            elsif site_links.attr("href").include?("linkedin")
+               student_info[:linkedin] = site_links.attr("href")
+            elsif site_links.attr("href").include?("github")
+               student_info[:github] = site_links.attr("href")
+                end
               end
            end
         end
-        #binding.pry
+        binding.pry
       end
 
 
