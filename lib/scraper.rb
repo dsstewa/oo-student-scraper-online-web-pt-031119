@@ -41,7 +41,7 @@ class Scraper
                 end
               end
            end
-          student_info[:bio_quote] = containers.css("div.profile-quote").text
+          student_info[:profile_quote] = containers.css("div.profile-quote").text
   
         end
         student_info
