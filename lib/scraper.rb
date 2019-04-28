@@ -41,12 +41,8 @@ class Scraper
                 end
               end
            end
-          
-          #containers.css("div.vitals-text-container").each 
-           
-           binding.pry
-           
-           
+          student_info[:bio_quote] = containers.css("div.profile-quote").text
+  
         end
         student_info
         #binding.pry
