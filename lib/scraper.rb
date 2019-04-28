@@ -29,6 +29,7 @@ class Scraper
     doc.css("div.vitals-container").each do |containers|
         containers.css("div.social-icon-container").each do |social|
            social.children.css("a").each do |site_links|
+            binding.pry
             if site_links.atter("href").include?("twitter")
               student_info[:twitter] = 
             
@@ -38,7 +39,7 @@ class Scraper
               end
            end
         end
-        binding.pry
+        #binding.pry
       end
 
 
