@@ -36,6 +36,8 @@ class Scraper
                student_info[:linkedin] = site_links.attr("href")
             elsif site_links.attr("href").include?("github")
                student_info[:github] = site_links.attr("href")
+            else
+              student_info[:blog] = site_links.attr("href")
                 end
               end
            end
