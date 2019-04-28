@@ -42,7 +42,7 @@ class Scraper
               end
            end
           
-          containers.css("div.") 
+          #containers.css("div.vitals-text-container").each 
            
            binding.pry
            
