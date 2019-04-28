@@ -29,6 +29,9 @@ class Scraper
     doc.css("div.vitals-container").each do |containers|
         containers.css("div.social-icon-container").each do |social|
            social.children.css("a").each do |site_links|
+            
+            
+            
             links << site_links.attr("href")
   
               end
