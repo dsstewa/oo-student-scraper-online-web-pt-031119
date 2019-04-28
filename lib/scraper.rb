@@ -30,11 +30,11 @@ class Scraper
         containers.css("div.social-icon-container").each do |social|
            social.children.css("a").each do |site_links|
             binding.pry
-            if site_links.atter("href").include?("twitter")
-              student_info[:twitter] = 
+            # if site_links.atter("href").include?("twitter")
+            #   student_info[:twitter] = 
             
             
-            links << site_links.attr("href")
+
   
               end
            end
