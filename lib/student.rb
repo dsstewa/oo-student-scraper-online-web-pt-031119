@@ -9,7 +9,7 @@ class Student
     @name = student_hash[:name]
     @location = student_hash[:location]
     binding.pry
-    @twitter = student_hash[:twitter] if student_hash[:twitter]?
+    @twitter = student_hash[:twitter] if student_hash[:twitter]
     
     @@all << self
     #binding.pry
