@@ -40,7 +40,8 @@ class Scraper
               end
            end
         end
-        binding.pry
+        student_info
+        #binding.pry
       end
 
 
