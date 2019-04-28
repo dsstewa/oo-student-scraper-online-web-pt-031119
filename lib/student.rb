@@ -8,7 +8,6 @@ class Student
   def initialize(student_hash)
     @name = student_hash[:name]
     @location = student_hash[:location]
-    binding.pry
     @twitter = student_hash[:twitter] if student_hash[:twitter]
     
     @@all << self
@@ -22,7 +21,7 @@ class Student
   end
 
   def add_student_attributes(attributes_hash)
-    #Student.new(attributes_hash)
+    Student.new(attributes_hash)
   end
 
   def self.all
